@@ -194,7 +194,7 @@ section.topo-do-site .flex {
 /* Inamação da imagem */
 #imgDeive {
     position: relative;
-    animation: flutuar 2s ease-in-out infinite alternate;
+    animation: flutuar 1.5s ease-in-out infinite alternate;
 }
 
 @keyframes flutuar {
@@ -203,7 +203,7 @@ section.topo-do-site .flex {
     }
 
     100% {
-        top: 30px;
+        top: 25px;
     }
 }
 
