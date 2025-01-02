@@ -16,7 +16,12 @@ overlay.addEventListener('click', ()=>{
 })
 
 cont.addEventListener('click',() =>{
+    event.preventDefault(); // Previne a navegação padrão, se necessário
     let section = document.getElementById('contato');
-    section.scrollIntoView({behavior: "smooth"});
+    if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+    } else {
+        console.error('Seção "contato" não encontrada.');
+    }
 }) 
     
